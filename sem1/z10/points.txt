@@ -1,0 +1,3 @@
+dinamo shakhtar 1 2
+dinamo zorya 1 1
+shakhtar zorya 2 0

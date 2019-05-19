@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1XBet</title>
+</head>
+<style type="text/css">
+        #creator {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        }
+
+        #totalizator {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        }
+</style>
+<body>
+<h2>Сделайте вашу ставку:</h2>
+<form method="post" action="process">
+    <table align="center">
+        <tr>
+            <th>
+                <select size="1" name="team1_name">
+                    {team1_select}
+                </select>
+            </th>
+            <th>
+                <select size="1" name="team2_name">
+                    {team2_select}
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="number" name="team1_points" value="0">
+            </th>
+            <th>
+                <input type="number" name="team2_points" value="0">
+            </th>
+        </tr>
+    </table>
+    <p align="center">
+        <input type="submit" value="Ставлю!">
+    </p>
+</form>
+<p id="totalizator">Все права защищены. Вероятность в 100% гарантирована разработчиками :3</p>
+<p id="creator">Govnocode by @007morf</p>
+</body>
+</html>

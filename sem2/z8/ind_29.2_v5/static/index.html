@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Укрзалізниця</title>
+    <!--<link rel="stylesheet" href="localhost:8060//static/style.css"/>-->
+</head>
+<style>
+    #creator {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    }
+
+    #imho {
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    }
+
+    #btn_left {
+        position: fixed;
+        left: 10px;
+        bottom: 60%;
+    }
+
+    #btn_right {
+        position: fixed;
+        right: 10px;
+        bottom: 60%;
+    }
+
+    #page_type {
+        text-align: center;
+        font: 10pt sans-serif;
+    }
+
+    table {
+    font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+</style>
+<body>
+<h2 align="center">Вас вітає Укрзалізниця!</h2>
+<p id="page_type">Розрахунок вартості проїзду</p>
+
+<form method="post" action="calculate">
+    <table align="center">
+        <tr>
+            <th>Оберіть пасажира</th>
+            <th>Оберіть пункт відправлення</th>
+            <th>Оберіть пункт призначення</th>
+        </tr>
+        <tr>
+            <th>
+                <select name="passenger">
+                    {passengers}
+                </select>
+            </th>
+            <th>
+                <select name="from">
+                    {destinations}
+                </select>
+            </th>
+            <th>
+                <select name="to">
+                    {destinations}
+                </select>
+            </th>
+        </tr>
+    </table>
+    <p align="center">
+        <input type="submit" value="Розрахувати ціну">
+    </p>
+</form>
+
+<p align="center">
+    {price}
+</p>
+
+<form method="post" action="add_passenger_btn">
+    <p align="right">
+        <input type="submit" value="Додати пасажира" id="btn_left">
+    </p>
+</form>
+
+<form method="post" action="add_route_btn">
+    <p align="right">
+        <input type="submit" value="Додати маршрут" id="btn_right">
+    </p>
+</form>
+
+<p id="creator">Govnocode by @007morf</p>
+<p id="imho">Якщо подивитись на сайт УЗ, то там теж вєрстальщік нє оч</p>
+</body>
+</html>

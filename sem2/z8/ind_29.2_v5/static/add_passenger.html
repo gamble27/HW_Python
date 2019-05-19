@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Укрзалізниця</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #creator {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    }
+
+    #imho {
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    }
+
+    #btn_left {
+        position: fixed;
+        left: 10px;
+        bottom: 60%;
+    }
+
+    #btn_right {
+        position: fixed;
+        right: 10px;
+        bottom: 60%;
+    }
+
+    #page_type {
+        text-align: center;
+        font: 10pt sans-serif;
+    }
+
+    table {
+    font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+</style>
+<body>
+<h2 align="center">Вас вітає Укрзалізниця!</h2>
+<p id="page_type">Додати клієнта до бази</p>
+
+<form method="post" action="add_passenger">
+    <p align="center">
+        ПІБ:
+        <input type="text" name="name">
+    </p>
+    <p align="center">
+        Номер паспорта:
+        <input type="text" name="id_card">
+    </p>
+    <p align="center">
+        <input type="submit" value="Додати">
+    </p>
+</form>
+
+<p id="creator">Govnocode by @007morf</p>
+<p id="imho">Якщо подивитись на сайт УЗ, то там теж вєрстальщік нє оч</p>
+</body>
+</html>

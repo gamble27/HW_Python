@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book Online</title>
+    <style type="text/css">
+        #creator {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<h3 align="center">Edit contact</h3>
+<form method="post" action="update_contact">
+    <p align="center">
+        Select name: <select name="name">
+                        {contact_selection}
+                    </select>
+    </p>
+    <p align="center">
+        New phone: <input type="text" name="phone" value="">
+    </p>
+    <p align="center">
+        <input type="submit" name="submit" value="Save">
+    </p>
+</form>
+<p id="creator">Govnocode by @007morf</p>
+</body>
+</html>
