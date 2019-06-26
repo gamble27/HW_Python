@@ -22,7 +22,7 @@ Oh, completely forgotten. Sometimes code can contain dumb structures,
 like class Person or kind of this. Sorry, but this class is not my fault. It's in
 homework task specification... 
 
-##SEM 1
+## SEM 1
 
 - **z2, z3** - numpy library
 - **z4** - matplotlib library + numpy
@@ -45,7 +45,7 @@ bold/italic stuff and paragraphs
 
 - **z13** - socket server with SQLite3 database
 
-##SEM 2
+## SEM 2
 
 - **z1** - socket library
 
