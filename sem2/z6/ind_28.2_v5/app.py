@@ -121,7 +121,7 @@ class CurrencyConverterApp:
 
     def _format_resp(self, resp_file, arg_list):
         """
-        потому что сраный css со своими четырежды уебанными фигурными скобками не может блять не помешать
+        потому что ?)$#@$0 css со своими четырежды ?)$#@$0 фигурными скобками не может ?)$#@$0 не помешать
         :param resp_file: html file with response
         :param arg_list: list of tuples like this: ("param_name", value)
         :return: formatted response without any errors!

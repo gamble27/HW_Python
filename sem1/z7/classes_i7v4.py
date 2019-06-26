@@ -1,5 +1,4 @@
 import os.path as path
-import os
 import datetime
 
 class SysJournal:
